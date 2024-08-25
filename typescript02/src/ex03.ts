@@ -69,22 +69,22 @@
 //   age: 20,
 // };
 
-interface User {
-  id: number;
-  name: string;
-  email: string;
-  password: string;
-}
+// interface User {
+//   id: number;
+//   name: string;
+//   email: string;
+//   password: string;
+// }
 
-function createUserWithoutPassword<T extends Omit<User, "password">>(
-  user: T
-): T {
-  return user;
-}
+// function createUserWithoutPassword<T extends Omit<User, "password">>(
+//   user: T
+// ): T {
+//   return user;
+// }
 
-createUserWithoutPassword({
-  id: 1,
-  name: "Hoàng An",
-  email: "hoangan.web@gmail.com",
-  // password: "123456",
-});
+// createUserWithoutPassword({
+//   id: 1,
+//   name: "Hoàng An",
+//   email: "hoangan.web@gmail.com",
+//   // password: "123456",
+// });
